@@ -4,12 +4,13 @@ on:
     branches: [main]
 
   pull_request:
-    branches: ['*']
+    branches: ['*']    
+
+defaults:
+  run:
+    working-directory: ./webhook
 
 jobs:
-  defaults:
-    run:
-      working-directory: ./webhook
   lint:
     name: Lint
     runs-on: ubuntu-20.04
