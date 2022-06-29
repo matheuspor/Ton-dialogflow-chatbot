@@ -1,0 +1,57 @@
+{
+  "id": "dd6f0488-e33b-47fb-9ad9-870601db4d6d",
+  "name": "Choose Subscription",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ChoosePlan-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "85d69e5b-d089-4a26-b1a8-15181becf8be",
+          "name": "subscription",
+          "required": false,
+          "dataType": "@Subscription",
+          "value": "$subscription",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "pt-br",
+              "value": "Qual plano gostaria de conhecer?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

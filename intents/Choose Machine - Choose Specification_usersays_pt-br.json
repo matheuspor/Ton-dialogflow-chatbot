@@ -1,0 +1,157 @@
+[
+  {
+    "id": "c9a3440e-1584-48be-bcb9-875116804571",
+    "data": [
+      {
+        "text": "prazo",
+        "meta": "@Specification",
+        "alias": "specification",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "4a5c6839-70a9-4510-8d1c-fa8ea1ff9f25",
+    "data": [
+      {
+        "text": "ver ",
+        "userDefined": false
+      },
+      {
+        "text": "contratação",
+        "meta": "@Specification",
+        "alias": "specification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "4b153309-33e9-49bc-ac6e-5dd5cb79d60c",
+    "data": [
+      {
+        "text": "comprarmaquina",
+        "meta": "@Specification",
+        "alias": "specification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "bdc1fca4-7fe5-43b5-a677-923a1918fe80",
+    "data": [
+      {
+        "text": "contratar",
+        "meta": "@Specification",
+        "alias": "specification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "efa07247-6c2a-4c96-bb17-d10aab8c174b",
+    "data": [
+      {
+        "text": "ver ",
+        "userDefined": false
+      },
+      {
+        "text": "prazo de entrega",
+        "meta": "@Specification",
+        "alias": "specification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "24bbceff-b07f-4ec8-8843-c4ba0d48f824",
+    "data": [
+      {
+        "text": "qual é a ",
+        "userDefined": false
+      },
+      {
+        "text": "previsão de entrega",
+        "meta": "@Specification",
+        "alias": "specification",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "7ac6ac66-d2d6-4c2d-9a28-0653bfbf27e5",
+    "data": [
+      {
+        "text": "previsão de entrega",
+        "meta": "@Specification",
+        "alias": "specification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "3634ae77-1126-43f4-9cae-9d7dd9d9cdcd",
+    "data": [
+      {
+        "text": "ver ",
+        "userDefined": false
+      },
+      {
+        "text": "tempo de entrega",
+        "meta": "@Specification",
+        "alias": "specification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "b8325430-db38-43b1-b568-335ee5dd260e",
+    "data": [
+      {
+        "text": "tempo de entrega",
+        "meta": "@Specification",
+        "alias": "specification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

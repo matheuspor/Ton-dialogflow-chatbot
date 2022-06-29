@@ -1,0 +1,48 @@
+[
+  {
+    "value": "T1",
+    "synonyms": [
+      "t1",
+      "T1",
+      "t 1",
+      "T 1"
+    ]
+  },
+  {
+    "value": "T2+",
+    "synonyms": [
+      "t2+",
+      "T2+",
+      "t2",
+      "t 2+",
+      "t 2 +",
+      "T 2+"
+    ]
+  },
+  {
+    "value": "T3",
+    "synonyms": [
+      "t3",
+      "T3",
+      "t 3",
+      "T 3"
+    ]
+  },
+  {
+    "value": "T1 Chip",
+    "synonyms": [
+      "t1 chip",
+      "t1chip",
+      "T1 Chip",
+      "T1Chip",
+      "t 1 chip",
+      "T 1 chip",
+      "t 1 Chip",
+      "T 1 Chip",
+      "t1-chip",
+      "T1-chip",
+      "t1-Chip",
+      "T1-Chip"
+    ]
+  }
+]

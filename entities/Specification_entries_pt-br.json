@@ -1,0 +1,26 @@
+[
+  {
+    "value": "shipping_time",
+    "synonyms": [
+      "entrega",
+      "previsão de entrega",
+      "tempo de entrega",
+      "prazo",
+      "prazo de entrega"
+    ]
+  },
+  {
+    "value": "total_amount",
+    "synonyms": [
+      "valor",
+      "preço",
+      "valor de contratação",
+      "preço de contratação",
+      "valor da maquina",
+      "preço da maquina",
+      "adesão",
+      "valor de adesão",
+      "preço de adesão"
+    ]
+  }
+]

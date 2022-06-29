@@ -1,0 +1,218 @@
+[
+  {
+    "id": "5169af87-f5c1-412e-b26c-3d6a6f812e1c",
+    "data": [
+      {
+        "text": "outras maquininhas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "3bcd4ccf-3744-4324-908c-58c75ee966e3",
+    "data": [
+      {
+        "text": "outras ",
+        "userDefined": false
+      },
+      {
+        "text": "maquinas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "8711da27-f76e-4027-a07f-0126f8957ed3",
+    "data": [
+      {
+        "text": "ver maquininhas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "2a22fb6b-d691-4151-a08c-b727c15df7c6",
+    "data": [
+      {
+        "text": "maquininhas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "8e4eaf99-0b50-45c1-bdb3-bd2d36935103",
+    "data": [
+      {
+        "text": "maquinas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "950237f4-2583-4cd8-96c9-df3c8628b79d",
+    "data": [
+      {
+        "text": "ver ",
+        "userDefined": false
+      },
+      {
+        "text": "maquinas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "6d8160f6-3c72-4215-b05b-c8c83887685f",
+    "data": [
+      {
+        "text": "resultados anteriores",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "7c787151-bdbf-4266-8809-ce1453d58172",
+    "data": [
+      {
+        "text": "página anterior",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "a6b3fddb-1ef9-4cd9-9ab8-26523f78ca75",
+    "data": [
+      {
+        "text": "leia os resultados anteriores",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "af7b7c10-0a98-4528-85ed-3cd7c65ecc31",
+    "data": [
+      {
+        "text": "voltar para a página anterior",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "a699518b-dc72-4966-9fde-bafafa2f2c4e",
+    "data": [
+      {
+        "text": "volte",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "0ffa8e6b-f2b2-4271-abbe-bb3d12a4ae40",
+    "data": [
+      {
+        "text": "vá para os resultados anteriores",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "79e02b94-bea3-4f93-abc3-ea3382b24fe2",
+    "data": [
+      {
+        "text": "voltar ao anterior",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "5f0bf3b9-2e56-4725-af94-2be131a660dd",
+    "data": [
+      {
+        "text": "vá para a página anterior",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "b1bf1820-c36d-42e4-ab40-01a5fc329b05",
+    "data": [
+      {
+        "text": "voltar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "58a955de-862b-40ed-93cf-561cb9979dfb",
+    "data": [
+      {
+        "text": "anterior",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "e915bd85-b409-4597-a44f-01c287228b50",
+    "data": [
+      {
+        "text": "encerrar atendimento",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "876e2b83-03ae-4fc6-849f-fdcfc1c6817a",
+    "data": [
+      {
+        "text": "encerrar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "93b8a3af-578f-4220-bac0-5b98201af13d",
+    "data": [
+      {
+        "text": "não",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

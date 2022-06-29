@@ -1,0 +1,33 @@
+[
+  {
+    "value": "megaton",
+    "synonyms": [
+      "megaton",
+      "mega ton",
+      "mega"
+    ]
+  },
+  {
+    "value": "ton",
+    "synonyms": [
+      "basico",
+      "básico"
+    ]
+  },
+  {
+    "value": "gigaton",
+    "synonyms": [
+      "gigaton",
+      "giga ton",
+      "giga"
+    ]
+  },
+  {
+    "value": "ultraton",
+    "synonyms": [
+      "ultraton",
+      "ultra ton",
+      "ultra"
+    ]
+  }
+]

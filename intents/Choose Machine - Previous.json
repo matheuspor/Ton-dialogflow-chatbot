@@ -1,0 +1,45 @@
+{
+  "id": "f86aec5b-9b0a-4a66-96e3-01dae55691c0",
+  "parentId": "ce3b2acd-9873-4588-9f42-34114b334832",
+  "rootParentId": "dd6f0488-e33b-47fb-9ad9-870601db4d6d",
+  "name": "Choose Machine - Previous",
+  "auto": true,
+  "contexts": [
+    "ChooseMachine-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ChoosePlan.ChoosePlan-custom.ChooseMachine-previous",
+      "affectedContexts": [
+        {
+          "name": "ChooseMachine-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "ChoosePlan-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

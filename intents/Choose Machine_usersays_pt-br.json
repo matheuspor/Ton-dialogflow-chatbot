@@ -1,0 +1,221 @@
+[
+  {
+    "id": "a1996934-02d1-4fda-88ec-92e1f8f779b2",
+    "data": [
+      {
+        "text": "maquina ",
+        "userDefined": false
+      },
+      {
+        "text": "t2+",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "97f57d37-ce58-4361-8f7c-e2901a38666c",
+    "data": [
+      {
+        "text": "maquina ",
+        "userDefined": false
+      },
+      {
+        "text": "t2",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "ee631b6a-7ada-4b09-9768-91d622092303",
+    "data": [
+      {
+        "text": "t2",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "3e49a514-b3b4-4eb8-97ba-ff272d182b2f",
+    "data": [
+      {
+        "text": "maquina ",
+        "userDefined": false
+      },
+      {
+        "text": "t1 chip",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "9dd3e59b-b7cf-445d-8b4b-6f6e5554012f",
+    "data": [
+      {
+        "text": "maquina ",
+        "userDefined": false
+      },
+      {
+        "text": "t3",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 3,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "482aaf95-54b7-4461-ab7f-6626e98616be",
+    "data": [
+      {
+        "text": "maquina ",
+        "userDefined": false
+      },
+      {
+        "text": "t1",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 3,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "8dabd459-e24e-464b-b40c-09d75751f1a7",
+    "data": [
+      {
+        "text": "t1 chip",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "2d8762fd-f2f7-4556-a5be-33326bb0fb78",
+    "data": [
+      {
+        "text": "t1chip",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "a1e6b6e7-ff64-424a-a89a-bfb1525683a3",
+    "data": [
+      {
+        "text": "t1-chip",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "4c529cf2-204e-4352-91d4-8a3779ea0353",
+    "data": [
+      {
+        "text": "maquina ",
+        "userDefined": false
+      },
+      {
+        "text": "t1-chip",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "e82f013b-64ed-4a0e-a8bb-60c4525f575a",
+    "data": [
+      {
+        "text": "t3",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "10011412-9e20-4c56-8ca5-bf8453f5923e",
+    "data": [
+      {
+        "text": "t2+",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "170caf34-5a19-4261-b6ed-5eea644a7581",
+    "data": [
+      {
+        "text": "t1",
+        "meta": "@Machine",
+        "alias": "machine",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

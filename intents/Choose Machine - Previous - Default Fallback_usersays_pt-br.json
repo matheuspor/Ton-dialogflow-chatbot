@@ -1,0 +1,28 @@
+[
+  {
+    "id": "3166849c-b0ae-4cc4-91ea-d56761830776",
+    "data": [
+      {
+        "text": "ver planos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "988a8d2c-63b8-4320-be3b-383ae6a42888",
+    "data": [
+      {
+        "text": "planos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

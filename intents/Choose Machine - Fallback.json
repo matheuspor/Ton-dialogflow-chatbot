@@ -1,0 +1,43 @@
+{
+  "id": "bcba10ea-403a-4b51-a8b8-59ee5b78a0eb",
+  "parentId": "ce3b2acd-9873-4588-9f42-34114b334832",
+  "rootParentId": "dd6f0488-e33b-47fb-9ad9-870601db4d6d",
+  "name": "Choose Machine - Fallback",
+  "contexts": [
+    "ChooseMachine-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ChooseMachine.ChooseMachine-fallback",
+      "affectedContexts": [
+        {
+          "name": "ChooseMachine-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "Desculpe, não entendi. Gostaria de saber o valor de adesão ou o prazo de entrega?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

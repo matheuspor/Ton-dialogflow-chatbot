@@ -1,0 +1,56 @@
+{
+  "id": "ce3b2acd-9873-4588-9f42-34114b334832",
+  "parentId": "dd6f0488-e33b-47fb-9ad9-870601db4d6d",
+  "rootParentId": "dd6f0488-e33b-47fb-9ad9-870601db4d6d",
+  "name": "Choose Machine",
+  "auto": true,
+  "contexts": [
+    "ChoosePlan-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ChoosePlan.ChoosePlan-custom",
+      "affectedContexts": [
+        {
+          "name": "ChooseMachine-followup",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "35cb8af3-b73b-493e-afd8-8fc50f115350",
+          "name": "machine",
+          "required": false,
+          "dataType": "@Machine",
+          "value": "$machine",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
