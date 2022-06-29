@@ -10,7 +10,7 @@ const { Card, Image } = require('dialogflow-fulfillment');
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
-  const agent = new WebhookClient({ request, response });
+  const webhook = new WebhookClient({ request, response });
   console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers));
   console.log('Dialogflow Request body: ' + JSON.stringify(request.body));
 
@@ -78,5 +78,5 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('Choose Machine - Choose Specification', chooseSpec);
   intentMap.set('Choose Machine - Previous - Default Fallback', defaultFallback);
   intentMap.set('Default Fallback Intent', defaultFallback);
-  agent.handleRequest(intentMap);
+  webhook.handleRequest(intentMap);
 });

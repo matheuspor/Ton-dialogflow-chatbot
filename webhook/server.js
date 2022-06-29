@@ -4,11 +4,12 @@ const { WebhookClient } = require('dialogflow-fulfillment');
 const { Card, Image } = require('dialogflow-fulfillment');
 
 const app = express();
+app.disable('x-powered-by');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.send('Hello World!');
 });
 
@@ -72,9 +73,7 @@ function defaultFallback(agent) {
 }
 
 app.post('/webhook', (request, response) => {
-  const agent = new WebhookClient({ request, response });
-  // console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers));
-  // console.log('Dialogflow Request body: ' + JSON.stringify(request.body));
+  const webhook = new WebhookClient({ request, response });
 
   const intentMap = new Map();
   intentMap.set('Choose Subscription', chooseSubscription);
@@ -83,7 +82,7 @@ app.post('/webhook', (request, response) => {
   intentMap.set('Choose Machine - Choose Specification', chooseSpec);
   intentMap.set('Choose Machine - Previous - Default Fallback', defaultFallback);
   intentMap.set('Default Fallback Intent', defaultFallback);
-  agent.handleRequest(intentMap);
+  webhook.handleRequest(intentMap);
 });
 
 app.listen(process.env.PORT || 3000, () => {
