@@ -1,0 +1,60 @@
+name: Webhook Server Tests
+on: 
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: ['*']    
+
+defaults:
+  run:
+    working-directory: ./webhook
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout Source Files
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+        
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Lint Source Files
+        run: npm run lint
+
+  test:
+    name: Tests
+    needs: lint
+    runs-on: ubuntu-20.04  
+
+    steps:
+      - name: Checkout Source Files
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Tests
+        run: npm test
+        
+      - name: Run Coverage
+        run: npm run test:coverage
+        
+      - name: Print Report
+        run: npx nyc --reporter lcov --reporter text --report-dir .nyc_coverage report
+        
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
