@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "actions-on-google": "^2.2.0",
+    "axios": "0.27.2",
+    "dialogflow": "^0.6.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.18.1"
+  },
+  "name": "tonbotwebhook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "sinon": "^14.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha \"__tests__/**/*.spec.js\" --exit -t 60000",
+    "test:coverage": "nyc npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
