@@ -1,40 +1,40 @@
-const sinon = require("sinon");
-const { chooseSubscription } = require("../../server");
+const sinon = require('sinon');
+const { chooseSubscription } = require('../../server');
 
 beforeEach(() => {
   sinon.restore();
 });
 
-const subscriptionPlans = ['ton', 'megaton', 'gigaton', 'ultraton']
+const subscriptionPlans = ['ton', 'megaton', 'gigaton', 'ultraton'];
 
 const subscriptionObject = {
-  'ton': 'Básico',
-  'megaton': 'Mega',
-  'gigaton': 'Giga',
-  'ultraton': 'Ultra',
-}
+  ton: 'Básico',
+  megaton: 'Mega',
+  gigaton: 'Giga',
+  ultraton: 'Ultra',
+};
 
 describe('Test chooseSubscription function', () => {
-
   it('Test if function runs when parameter is passed and context is empty', () => {
     subscriptionPlans.forEach((plan) => {
       const addStub = sinon.stub().resolves();
       const getStub = sinon.stub().returns();
       const agent = {
         context: {
-          get: getStub
+          get: getStub,
         },
         parameters: {
           subscription: plan,
         },
         add: addStub,
-      }
+      };
       chooseSubscription(agent);
       sinon.assert.calledWith(getStub, 'choosemachine-followup');
-      sinon.assert.calledWith(addStub, `As maquininhas disponíveis nesse plano são: ` + `\nT1 ${subscriptionObject[plan]} - A mais barata;` +
-        `\nT1 Chip ${subscriptionObject[plan]} - A que cabe no seu bolso com chip e Wi-Fi;` +
-        `\nT2+ ${subscriptionObject[plan]} - Pra você não ficar sem sinal;` +
-        `\nT3 ${subscriptionObject[plan]} - A mais completa. \nGostaria de conhecer melhor alguma delas?`);
+      sinon.assert.calledWith(addStub, 'As maquininhas disponíveis nesse plano são: '
+        + `\nT1 ${subscriptionObject[plan]} - A mais barata;`
+        + `\nT1 Chip ${subscriptionObject[plan]} - A que cabe no seu bolso com chip e Wi-Fi;`
+        + `\nT2+ ${subscriptionObject[plan]} - Pra você não ficar sem sinal;`
+        + `\nT3 ${subscriptionObject[plan]} - A mais completa. \nGostaria de conhecer melhor alguma delas?`);
     });
   });
 
@@ -45,8 +45,8 @@ describe('Test chooseSubscription function', () => {
         parameters: {
           requestedMachine: {
             catalog: plan,
-          }
-        }
+          },
+        },
       });
       const agent = {
         context: {
@@ -56,13 +56,14 @@ describe('Test chooseSubscription function', () => {
           subscription: '',
         },
         add: addStub,
-      }
+      };
       chooseSubscription(agent);
       sinon.assert.calledWith(getStub, 'choosemachine-followup');
-      sinon.assert.calledWith(addStub, `As maquininhas disponíveis nesse plano são: ` + `\nT1 ${subscriptionObject[plan]} - A mais barata;` +
-        `\nT1 Chip ${subscriptionObject[plan]} - A que cabe no seu bolso com chip e Wi-Fi;` +
-        `\nT2+ ${subscriptionObject[plan]} - Pra você não ficar sem sinal;` +
-        `\nT3 ${subscriptionObject[plan]} - A mais completa. \nGostaria de conhecer melhor alguma delas?`);
+      sinon.assert.calledWith(addStub, 'As maquininhas disponíveis nesse plano são: '
+        + `\nT1 ${subscriptionObject[plan]} - A mais barata;`
+        + `\nT1 Chip ${subscriptionObject[plan]} - A que cabe no seu bolso com chip e Wi-Fi;`
+        + `\nT2+ ${subscriptionObject[plan]} - Pra você não ficar sem sinal;`
+        + `\nT3 ${subscriptionObject[plan]} - A mais completa. \nGostaria de conhecer melhor alguma delas?`);
     });
-  })
+  });
 });
