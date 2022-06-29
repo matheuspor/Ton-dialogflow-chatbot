@@ -91,5 +91,5 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 module.exports = {
-  app, chooseSubscription, chooseMachine, chooseSpec, defaultFallback,
+  app, chooseSubscription, chooseMachine, chooseSpec, defaultFallback, subscriptionObject,
 };

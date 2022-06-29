@@ -1,18 +1,11 @@
 const sinon = require('sinon');
-const { chooseSubscription } = require('../../server');
+const { chooseSubscription, subscriptionObject } = require('../../server');
 
 beforeEach(() => {
   sinon.restore();
 });
 
 const subscriptionPlans = ['ton', 'megaton', 'gigaton', 'ultraton'];
-
-const subscriptionObject = {
-  ton: 'Básico',
-  megaton: 'Mega',
-  gigaton: 'Giga',
-  ultraton: 'Ultra',
-};
 
 describe('Test chooseSubscription function', () => {
   it('Test if function runs when parameter is passed and context is empty', () => {
