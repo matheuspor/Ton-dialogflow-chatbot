@@ -1,11 +1,7 @@
-const sinon = require('sinon');
+const { assert, stub, restore } = require('sinon');
 const { Image } = require('dialogflow-fulfillment');
-const { default: axios } = require('axios');
-const server = require('../../server');
-
-beforeEach(() => {
-  sinon.restore();
-});
+const axios = require('axios');
+const { chooseMachine, subscriptionObject } = require('../../server');
 
 const mockAPIResponse = {
   data: {
@@ -24,15 +20,19 @@ const mockAPIResponse = {
 };
 
 describe('Test chooseMachine function', () => {
+  beforeEach(() => {
+    restore();
+  });
+
   it('Test if function runs correctly in "chooseplan-followup" context', async () => {
-    const addStub = sinon.stub().resolves();
-    const axiosStub = sinon.stub(axios, 'get').resolves(mockAPIResponse);
-    const getStub = sinon.stub().returns({
+    const addStub = stub().resolves();
+    const axiosStub = stub(axios, 'get').resolves(mockAPIResponse);
+    const getStub = stub().returns({
       parameters: {
         subscription: 'ton',
       },
     });
-    const setStub = sinon.stub().returns();
+    const setStub = stub().returns();
     const agent = {
       parameters: {
         machine: 'T1',
@@ -43,27 +43,29 @@ describe('Test chooseMachine function', () => {
       },
       add: addStub,
     };
-    await server.chooseMachine(agent);
-    sinon.assert.calledOnceWithMatch(getStub, 'chooseplan-followup');
-    sinon.assert.calledWith(axiosStub, 'https://api.lojastonemais.com.br/products?catalog=ton');
-    sinon.assert.calledWith(setStub, 'choosemachine-followup', 2, { requestedMachine: mockAPIResponse.data.products[0] });
-    sinon.assert.calledWith(addStub, `Essa é a ${agent.parameters.machine} ${server.subscriptionObject.ton}`);
-    sinon.assert.calledWith(addStub, new Image(mockAPIResponse.data.products[0].img_url));
-    sinon.assert.calledWith(addStub, `As principais características dela são: ${mockAPIResponse.data.products[0].highlights.join(', ')}.`
+
+    await chooseMachine(agent);
+
+    assert.calledOnceWithMatch(getStub, 'chooseplan-followup');
+    assert.calledWith(axiosStub, 'https://api.lojastonemais.com.br/products?catalog=ton');
+    assert.calledWith(setStub, 'choosemachine-followup', 2, { requestedMachine: mockAPIResponse.data.products[0] });
+    assert.calledWith(addStub, `Essa é a ${agent.parameters.machine} ${subscriptionObject.ton}`);
+    assert.calledWith(addStub, new Image(mockAPIResponse.data.products[0].img_url));
+    assert.calledWith(addStub, `As principais características dela são: ${mockAPIResponse.data.products[0].highlights.join(', ')}.`
       + '\nGostaria de saber o valor de adesão, prazo de entrega ou conhecer outras maquininhas?');
   });
 
   it('Test if function runs correctly in "choosemachine-followup" context', async () => {
-    const addStub = sinon.stub().resolves();
-    const axiosStub = sinon.stub(axios, 'get').resolves(mockAPIResponse);
-    const getStub = sinon.stub().returns({
+    const addStub = stub().resolves();
+    const axiosStub = stub(axios, 'get').resolves(mockAPIResponse);
+    const getStub = stub().returns({
       parameters: {
         requestedMachine: {
           catalog: 'ton',
         },
       },
     });
-    const setStub = sinon.stub().returns();
+    const setStub = stub().returns();
     const agent = {
       parameters: {
         machine: 'T1',
@@ -74,14 +76,16 @@ describe('Test chooseMachine function', () => {
       },
       add: addStub,
     };
-    await server.chooseMachine(agent);
-    sinon.assert.calledWith(getStub, 'chooseplan-followup');
-    sinon.assert.calledWith(getStub, 'choosemachine-followup');
-    sinon.assert.calledWith(axiosStub, 'https://api.lojastonemais.com.br/products?catalog=ton');
-    sinon.assert.calledWith(setStub, 'choosemachine-followup', 2, { requestedMachine: mockAPIResponse.data.products[0] });
-    sinon.assert.calledWith(addStub, `Essa é a ${agent.parameters.machine} ${server.subscriptionObject.ton}`);
-    sinon.assert.calledWith(addStub, new Image(mockAPIResponse.data.products[0].img_url));
-    sinon.assert.calledWith(addStub, `As principais características dela são: ${mockAPIResponse.data.products[0].highlights.join(', ')}.`
+
+    await chooseMachine(agent);
+
+    assert.calledWith(getStub, 'chooseplan-followup');
+    assert.calledWith(getStub, 'choosemachine-followup');
+    assert.calledWith(axiosStub, 'https://api.lojastonemais.com.br/products?catalog=ton');
+    assert.calledWith(setStub, 'choosemachine-followup', 2, { requestedMachine: mockAPIResponse.data.products[0] });
+    assert.calledWith(addStub, `Essa é a ${agent.parameters.machine} ${subscriptionObject.ton}`);
+    assert.calledWith(addStub, new Image(mockAPIResponse.data.products[0].img_url));
+    assert.calledWith(addStub, `As principais características dela são: ${mockAPIResponse.data.products[0].highlights.join(', ')}.`
       + '\nGostaria de saber o valor de adesão, prazo de entrega ou conhecer outras maquininhas?');
   });
 });
