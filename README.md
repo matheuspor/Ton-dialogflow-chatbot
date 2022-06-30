@@ -1,11 +1,10 @@
 <div>
 
 # Ton Chatbot
-![Main check status](https://img.shields.io/github/checks-status/matheuspor/ton-dialogflow-chatbot/main)
-![Repository top language](https://img.shields.io/github/languages/top/matheuspor/ton-dialogflow-chatbot)</a>
+![GitHub workflow status](https://img.shields.io/github/workflow/status/matheuspor/Ton-dialogflow-chatbot/Webhook%20Server%20Tests)
+![Repository top language](https://img.shields.io/github/languages/top/matheuspor/ton-dialogflow-chatbot)
 
 </div>
-
 Responde informações sobre os planos de taxas e as maquininhas disponíveis no Ton.
 <br>
 Integrado ao <a href="https://t.me/TonPlanosChatbot">Telegram :speech_balloon:</a>
