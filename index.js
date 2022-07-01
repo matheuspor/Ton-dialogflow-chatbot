@@ -23,11 +23,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
   function chooseMachine(agent) {
     const subscriptionContext = agent.context.get('chooseplan-followup');
-    const plano = subscriptionContext.parameters.subscription ? subscriptionContext.parameters.subscription : agent.context.get('choosemachine-followup').parameters.requestedMachine.catalog;
-    return axios.get(`https://api.lojastonemais.com.br/products?catalog=${plano}`).then(({ data: { products } }) => {
-      const machine = products.find((item) => plano !== 'ton' ? item.name === `${agent.parameters.machine} ${subscriptionObject[plano]}` : item.name === agent.parameters.machine);
+    const subscription = subscriptionContext.parameters.subscription ? subscriptionContext.parameters.subscription : agent.context.get('choosemachine-followup').parameters.requestedMachine.catalog;
+    return axios.get(`https://api.lojastonemais.com.br/products?catalog=${subscription}`).then(({ data: { products } }) => {
+      const machine = products.find((item) => subscription !== 'ton' ? item.name === `${agent.parameters.machine} ${subscriptionObject[subscription]}` : item.name === agent.parameters.machine);
       agent.context.set('choosemachine-followup', 2, { requestedMachine: machine });
-      agent.add(plano === 'ton' ? `Essa é a ${machine.name} ${subscriptionObject[plano]}` : `Essa é a ${machine.name}`);
+      agent.add(subscription === 'ton' ? `Essa é a ${machine.name} ${subscriptionObject[subscription]}` : `Essa é a ${machine.name}`);
       agent.add(new Image(machine.img_url));
       agent.add(`As principais características dela são: ${machine.highlights.join(', ')}.` +
         `\nGostaria de saber o valor de adesão, prazo de entrega ou conhecer outras maquininhas?`);
